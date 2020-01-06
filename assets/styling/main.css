@@ -1,97 +1,119 @@
-header {
-    position: relative;
-    background-color: black;
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
-  header .container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    opacity: 0.1;
-    z-index: 1;
-  }
-  .padleft{
-    width: 80%;
-    margin: auto;
-  }
-  .servicecontainer{
-    /* background-color: pink; */
-    padding-bottom: 0% !important;
-  }
-  .servicejumbotron{
-    /* background-color: pink; */
-    margin-bottom: 0% !important;
+#header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.navbar {
+  padding: 10px 0;
+  background: #dcdde1;
+}
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.navbar-dark .navbar-brand {
+  color: #0b0b0c;
+}
+.nav-item {
+  font-weight: 600;
+  padding-left: 10px;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  color: #e6ac00;
+}
+.kichwa {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
 
-  }
+.kichwa video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
 
-  #plx{
-    background-image: url('../images/ontripod.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.kichwa .container {
+  position: relative;
+  z-index: 2;
+}
 
-  #plx1{
-    background-image: url('../images/happen.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.kichwa .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.1;
+  z-index: 1;
+}
+.padleft {
+  width: 80%;
+  margin: auto;
+}
+.servicecontainer {
+  /* background-color: pink; */
+  padding-bottom: 0% !important;
+}
+.servicejumbotron {
+  /* background-color: pink; */
+  margin-bottom: 0% !important;
+}
 
-  .paralxcontainer{
-    padding: 5px 0px;
-  }
+#plx {
+  background-image: url("../images/ontripod.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .horzline{
-    width: 100%;
-    padding-left: 0 !important;
-  }
+#plx1 {
+  background-image: url("../images/happen.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .believein{
-   margin-left: 40px;
-  }
+.paralxcontainer {
+  padding: 5px 0px;
+}
 
-  .contactus{
-    padding: 30px;
-  }
+.horzline {
+  width: 100%;
+  padding-left: 0 !important;
+}
 
-  .details{
-    padding-left: 50px;
-    /* background-color: yellow */
+.believein {
+  margin-left: 40px;
+}
+
+.contactus {
+  padding: 30px;
+}
+
+.details {
+  padding-left: 50px;
+  /* background-color: yellow */
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .kichwa {
+    background: url("../videos/wedding.mp4") black no-repeat center center
+      scroll;
   }
-  
-  @media (pointer: coarse) and (hover: none) {
-    header {
-      background: url('../videos/wedding.mp4') black no-repeat center center scroll;
-    }
-  }
-  
+}
