@@ -60,10 +60,7 @@
   opacity: 0.1;
   z-index: 1;
 }
-.padleft {
-  width: 80%;
-  margin: auto;
-}
+
 .servicecontainer {
   /* background-color: pink; */
   padding-bottom: 0% !important;
@@ -107,7 +104,7 @@
 }
 
 .details {
-  padding-left: 50px;
+  padding-left: 100px;
   /* background-color: yellow */
 }
 
